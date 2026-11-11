@@ -1,0 +1,178 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Serveur Tempo AI",
+        "description": "Adresse de l'app Tempo AI, par exemple `{example}`.",
+        "data": {
+          "url": "URL",
+          "api_token": "Jeton d'API"
+        },
+        "data_description": {
+          "url": "URL de base de la page web et de l'API REST de Tempo AI.",
+          "api_token": "Seulement si TEMPO_API_TOKEN est défini sur le serveur. Nécessaire pour les boutons."
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigurer Tempo AI",
+        "data": {
+          "url": "URL",
+          "api_token": "Jeton d'API"
+        },
+        "data_description": {
+          "url": "URL de base de la page web et de l'API REST de Tempo AI.",
+          "api_token": "Seulement si TEMPO_API_TOKEN est défini sur le serveur. Nécessaire pour les boutons."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de joindre le serveur Tempo AI.",
+      "invalid_response": "Le serveur répond, mais ce n'est pas un serveur Tempo AI."
+    },
+    "abort": {
+      "already_configured": "Ce serveur est déjà configuré.",
+      "reconfigure_successful": "La configuration a été mise à jour."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "red_day_expected": {
+        "name": "Jour rouge prévu"
+      },
+      "white_day_expected": {
+        "name": "Jour blanc prévu"
+      }
+    },
+    "button": {
+      "refresh_forecast": {
+        "name": "Recalculer la prévision"
+      },
+      "retrain": {
+        "name": "Réentraîner les modèles"
+      }
+    },
+    "sensor": {
+      "color_today": {
+        "name": "Couleur aujourd'hui",
+        "state": {
+          "blue": "Bleu",
+          "white": "Blanc",
+          "red": "Rouge"
+        }
+      },
+      "color_tomorrow": {
+        "name": "Couleur demain",
+        "state": {
+          "blue": "Bleu",
+          "white": "Blanc",
+          "red": "Rouge"
+        }
+      },
+      "color_d2": {
+        "name": "Couleur J+2",
+        "state": {
+          "blue": "Bleu",
+          "white": "Blanc",
+          "red": "Rouge"
+        }
+      },
+      "color_d3": {
+        "name": "Couleur J+3",
+        "state": {
+          "blue": "Bleu",
+          "white": "Blanc",
+          "red": "Rouge"
+        }
+      },
+      "color_d4": {
+        "name": "Couleur J+4",
+        "state": {
+          "blue": "Bleu",
+          "white": "Blanc",
+          "red": "Rouge"
+        }
+      },
+      "white_probability_d2": {
+        "name": "Probabilité blanc J+2"
+      },
+      "red_probability_d2": {
+        "name": "Probabilité rouge J+2"
+      },
+      "white_probability_d3": {
+        "name": "Probabilité blanc J+3"
+      },
+      "red_probability_d3": {
+        "name": "Probabilité rouge J+3"
+      },
+      "white_probability_d4": {
+        "name": "Probabilité blanc J+4"
+      },
+      "red_probability_d4": {
+        "name": "Probabilité rouge J+4"
+      },
+      "white_days_left": {
+        "name": "Jours blancs restants"
+      },
+      "red_days_left": {
+        "name": "Jours rouges restants"
+      },
+      "accuracy_overall": {
+        "name": "Taux de réussite"
+      },
+      "accuracy_season": {
+        "name": "Taux de réussite de la saison"
+      },
+      "accuracy_month": {
+        "name": "Taux de réussite du mois"
+      },
+      "accuracy_last_7_days": {
+        "name": "Taux de réussite sur 7 jours"
+      },
+      "accuracy_d2": {
+        "name": "Taux de réussite J+2"
+      },
+      "accuracy_d3": {
+        "name": "Taux de réussite J+3"
+      },
+      "accuracy_d4": {
+        "name": "Taux de réussite J+4"
+      },
+      "tracking_since": {
+        "name": "Suivi depuis"
+      },
+      "predictions_evaluated": {
+        "name": "Prévisions évaluées"
+      },
+      "last_training": {
+        "name": "Dernier entraînement"
+      },
+      "forecast_issued_at": {
+        "name": "Prévision calculée à"
+      },
+      "next_daily_run": {
+        "name": "Prochaine prévision quotidienne"
+      },
+      "status": {
+        "name": "État",
+        "state": {
+          "starting": "Démarrage",
+          "initializing": "Initialisation",
+          "ready": "Prêt",
+          "busy": "Occupé",
+          "error": "Erreur"
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Impossible de joindre le serveur Tempo AI : {error}"
+    },
+    "invalid_token": {
+      "message": "Le serveur Tempo AI a refusé le jeton d'API. Indiquez le bon jeton dans la configuration de l'intégration."
+    },
+    "busy": {
+      "message": "Le serveur Tempo AI est occupé : {detail}"
+    }
+  }
+}

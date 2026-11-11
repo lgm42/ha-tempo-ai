@@ -1,0 +1,135 @@
+{
+  "entity": {
+    "binary_sensor": {
+      "red_day_expected": {
+        "default": "mdi:check-circle-outline",
+        "state": {
+          "on": "mdi:alert-octagon"
+        }
+      },
+      "white_day_expected": {
+        "default": "mdi:check-circle-outline",
+        "state": {
+          "on": "mdi:calendar-alert"
+        }
+      }
+    },
+    "button": {
+      "refresh_forecast": {
+        "default": "mdi:refresh"
+      },
+      "retrain": {
+        "default": "mdi:brain"
+      }
+    },
+    "sensor": {
+      "color_today": {
+        "default": "mdi:calendar",
+        "state": {
+          "blue": "mdi:calendar-check",
+          "white": "mdi:calendar-alert",
+          "red": "mdi:alert-octagon"
+        }
+      },
+      "color_tomorrow": {
+        "default": "mdi:calendar",
+        "state": {
+          "blue": "mdi:calendar-check",
+          "white": "mdi:calendar-alert",
+          "red": "mdi:alert-octagon"
+        }
+      },
+      "color_d2": {
+        "default": "mdi:calendar",
+        "state": {
+          "blue": "mdi:calendar-check",
+          "white": "mdi:calendar-alert",
+          "red": "mdi:alert-octagon"
+        }
+      },
+      "white_probability_d2": {
+        "default": "mdi:percent"
+      },
+      "red_probability_d2": {
+        "default": "mdi:percent"
+      },
+      "accuracy_d2": {
+        "default": "mdi:target"
+      },
+      "color_d3": {
+        "default": "mdi:calendar",
+        "state": {
+          "blue": "mdi:calendar-check",
+          "white": "mdi:calendar-alert",
+          "red": "mdi:alert-octagon"
+        }
+      },
+      "white_probability_d3": {
+        "default": "mdi:percent"
+      },
+      "red_probability_d3": {
+        "default": "mdi:percent"
+      },
+      "accuracy_d3": {
+        "default": "mdi:target"
+      },
+      "color_d4": {
+        "default": "mdi:calendar",
+        "state": {
+          "blue": "mdi:calendar-check",
+          "white": "mdi:calendar-alert",
+          "red": "mdi:alert-octagon"
+        }
+      },
+      "white_probability_d4": {
+        "default": "mdi:percent"
+      },
+      "red_probability_d4": {
+        "default": "mdi:percent"
+      },
+      "accuracy_d4": {
+        "default": "mdi:target"
+      },
+      "accuracy_overall": {
+        "default": "mdi:target"
+      },
+      "accuracy_season": {
+        "default": "mdi:target"
+      },
+      "accuracy_month": {
+        "default": "mdi:target"
+      },
+      "accuracy_last_7_days": {
+        "default": "mdi:target"
+      },
+      "white_days_left": {
+        "default": "mdi:calendar-blank-multiple"
+      },
+      "red_days_left": {
+        "default": "mdi:calendar-alert"
+      },
+      "tracking_since": {
+        "default": "mdi:calendar-start"
+      },
+      "predictions_evaluated": {
+        "default": "mdi:counter"
+      },
+      "last_training": {
+        "default": "mdi:brain"
+      },
+      "forecast_issued_at": {
+        "default": "mdi:clock-check-outline"
+      },
+      "next_daily_run": {
+        "default": "mdi:clock-outline"
+      },
+      "status": {
+        "default": "mdi:server",
+        "state": {
+          "error": "mdi:server-off",
+          "busy": "mdi:server-network"
+        }
+      }
+    }
+  }
+}

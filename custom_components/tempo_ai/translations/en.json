@@ -1,0 +1,178 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tempo AI server",
+        "description": "Address of the Tempo AI app, for example `{example}`.",
+        "data": {
+          "url": "URL",
+          "api_token": "API token"
+        },
+        "data_description": {
+          "url": "Base URL of the Tempo AI web page and REST API.",
+          "api_token": "Only if TEMPO_API_TOKEN is set on the server. Needed for the buttons."
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Tempo AI",
+        "data": {
+          "url": "URL",
+          "api_token": "API token"
+        },
+        "data_description": {
+          "url": "Base URL of the Tempo AI web page and REST API.",
+          "api_token": "Only if TEMPO_API_TOKEN is set on the server. Needed for the buttons."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach the Tempo AI server.",
+      "invalid_response": "The server answered, but it is not a Tempo AI server."
+    },
+    "abort": {
+      "already_configured": "This server is already configured.",
+      "reconfigure_successful": "The configuration was updated."
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "red_day_expected": {
+        "name": "Red day expected"
+      },
+      "white_day_expected": {
+        "name": "White day expected"
+      }
+    },
+    "button": {
+      "refresh_forecast": {
+        "name": "Recompute forecast"
+      },
+      "retrain": {
+        "name": "Retrain models"
+      }
+    },
+    "sensor": {
+      "color_today": {
+        "name": "Color today",
+        "state": {
+          "blue": "Blue",
+          "white": "White",
+          "red": "Red"
+        }
+      },
+      "color_tomorrow": {
+        "name": "Color tomorrow",
+        "state": {
+          "blue": "Blue",
+          "white": "White",
+          "red": "Red"
+        }
+      },
+      "color_d2": {
+        "name": "Color D+2",
+        "state": {
+          "blue": "Blue",
+          "white": "White",
+          "red": "Red"
+        }
+      },
+      "color_d3": {
+        "name": "Color D+3",
+        "state": {
+          "blue": "Blue",
+          "white": "White",
+          "red": "Red"
+        }
+      },
+      "color_d4": {
+        "name": "Color D+4",
+        "state": {
+          "blue": "Blue",
+          "white": "White",
+          "red": "Red"
+        }
+      },
+      "white_probability_d2": {
+        "name": "White probability D+2"
+      },
+      "red_probability_d2": {
+        "name": "Red probability D+2"
+      },
+      "white_probability_d3": {
+        "name": "White probability D+3"
+      },
+      "red_probability_d3": {
+        "name": "Red probability D+3"
+      },
+      "white_probability_d4": {
+        "name": "White probability D+4"
+      },
+      "red_probability_d4": {
+        "name": "Red probability D+4"
+      },
+      "white_days_left": {
+        "name": "White days left"
+      },
+      "red_days_left": {
+        "name": "Red days left"
+      },
+      "accuracy_overall": {
+        "name": "Success rate"
+      },
+      "accuracy_season": {
+        "name": "Success rate this season"
+      },
+      "accuracy_month": {
+        "name": "Success rate this month"
+      },
+      "accuracy_last_7_days": {
+        "name": "Success rate last 7 days"
+      },
+      "accuracy_d2": {
+        "name": "Success rate D+2"
+      },
+      "accuracy_d3": {
+        "name": "Success rate D+3"
+      },
+      "accuracy_d4": {
+        "name": "Success rate D+4"
+      },
+      "tracking_since": {
+        "name": "Tracking since"
+      },
+      "predictions_evaluated": {
+        "name": "Forecasts evaluated"
+      },
+      "last_training": {
+        "name": "Last training"
+      },
+      "forecast_issued_at": {
+        "name": "Forecast computed at"
+      },
+      "next_daily_run": {
+        "name": "Next daily forecast"
+      },
+      "status": {
+        "name": "Status",
+        "state": {
+          "starting": "Starting",
+          "initializing": "Initializing",
+          "ready": "Ready",
+          "busy": "Busy",
+          "error": "Error"
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Cannot reach the Tempo AI server: {error}"
+    },
+    "invalid_token": {
+      "message": "The Tempo AI server refused the API token. Set the right token in the integration settings."
+    },
+    "busy": {
+      "message": "The Tempo AI server is busy: {detail}"
+    }
+  }
+}

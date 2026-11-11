@@ -1,0 +1,244 @@
+{
+ "app": {
+  "version": "0.1.0",
+  "status": "ready",
+  "task": null,
+  "message": "couleurs Tempo 2026-2027 : 74 jours",
+  "last_daily_run": "2026-11-11T14:15:24+01:00",
+  "next_daily_run": "2026-11-12T12:00:00+01:00",
+  "forecast_time": "12:00",
+  "retrain_every_days": 30
+ },
+ "model": {
+  "version": "20261111-141458",
+  "trained_at": "2026-11-11T14:15:20+01:00",
+  "data_from": "2015-01-01",
+  "data_to": "2026-11-10",
+  "training_days": 4332,
+  "duration_s": 23.1,
+  "validation_winter_net_load_error": {
+   "J+1": 0.029928938457113734,
+   "J+2": 0.0315208951792908,
+   "J+3": 0.03255387986816395,
+   "J+4": 0.03231484078534107
+  },
+  "red_rule": "2026-27 : rouges approchés par l'algorithme Tempo 2014 + tunnel mensuel CRE 2026-189 (seuils PP de RTE non publiés)"
+ },
+ "today": {
+  "date": "2026-11-11",
+  "color": "blue"
+ },
+ "tomorrow": {
+  "date": "2026-11-12",
+  "horizon": 1,
+  "white_left_before": 42,
+  "red_left_before": 22,
+  "threshold_white": 1.241,
+  "threshold_red": 1.738,
+  "source": "rte",
+  "color": "blue",
+  "probabilities": {
+   "blue": 1.0,
+   "white": 0.0,
+   "red": 0.0
+  }
+ },
+ "forecast": [
+  {
+   "date": "2026-11-13",
+   "horizon": 2,
+   "white_left_before": 42,
+   "red_left_before": 22,
+   "threshold_white": 1.226,
+   "threshold_red": 1.728,
+   "source": "model",
+   "color": "blue",
+   "probabilities": {
+    "blue": 0.995,
+    "white": 0.005,
+    "red": 0.0
+   },
+   "net_load_mw": 49764,
+   "peak_residual_mw": 59761,
+   "consumption_mw": 58446,
+   "wind_mw": 5226,
+   "solar_mw": 3456,
+   "score": 0.844
+  },
+  {
+   "date": "2026-11-14",
+   "horizon": 3,
+   "white_left_before": 42,
+   "red_left_before": 22,
+   "threshold_white": 1.211,
+   "threshold_red": 1.718,
+   "source": "model",
+   "color": "white",
+   "probabilities": {
+    "blue": 0.3,
+    "white": 0.65,
+    "red": 0.05
+   },
+   "net_load_mw": 45772,
+   "peak_residual_mw": 54074,
+   "consumption_mw": 56649,
+   "wind_mw": 7254,
+   "solar_mw": 3624,
+   "score": 0.595
+  },
+  {
+   "date": "2026-11-15",
+   "horizon": 4,
+   "white_left_before": 42,
+   "red_left_before": 22,
+   "threshold_white": 1.196,
+   "threshold_red": 1.708,
+   "source": "model",
+   "color": "red",
+   "probabilities": {
+    "blue": 0.0,
+    "white": 0.2,
+    "red": 0.8
+   },
+   "net_load_mw": 33447,
+   "peak_residual_mw": 41381,
+   "consumption_mw": 50985,
+   "wind_mw": 15291,
+   "solar_mw": 2247,
+   "score": -0.174
+  }
+ ],
+ "forecast_issued_at": "2026-11-11T14:20:16+01:00",
+ "stock": {
+  "season": "2026-2027",
+  "white_left": 42,
+  "red_left": 22,
+  "white_total": 43,
+  "red_total": 22
+ },
+ "accuracy": {
+  "tracking_since": "2026-11-11",
+  "predictions_issued": 30,
+  "predictions_evaluated": 24,
+  "overall": {
+   "rate": 0.875,
+   "correct": 21,
+   "total": 24,
+   "by_horizon": {
+    "J+2": {
+     "rate": 1.0,
+     "correct": 8,
+     "total": 8
+    },
+    "J+3": {
+     "rate": 0.875,
+     "correct": 7,
+     "total": 8
+    },
+    "J+4": {
+     "rate": 0.75,
+     "correct": 6,
+     "total": 8
+    }
+   },
+   "red_found": {
+    "correct": 1,
+    "total": 2
+   },
+   "red_alerts_right": {
+    "correct": 1,
+    "total": 1
+   }
+  },
+  "season": {
+   "rate": 0.875,
+   "correct": 21,
+   "total": 24,
+   "by_horizon": {
+    "J+2": {
+     "rate": 1.0,
+     "correct": 8,
+     "total": 8
+    },
+    "J+3": {
+     "rate": 0.875,
+     "correct": 7,
+     "total": 8
+    },
+    "J+4": {
+     "rate": 0.75,
+     "correct": 6,
+     "total": 8
+    }
+   },
+   "red_found": {
+    "correct": 1,
+    "total": 2
+   },
+   "red_alerts_right": {
+    "correct": 1,
+    "total": 1
+   }
+  },
+  "month": {
+   "rate": 0.8571,
+   "correct": 18,
+   "total": 21,
+   "by_horizon": {
+    "J+2": {
+     "rate": 1.0,
+     "correct": 7,
+     "total": 7
+    },
+    "J+3": {
+     "rate": 0.8571,
+     "correct": 6,
+     "total": 7
+    },
+    "J+4": {
+     "rate": 0.7143,
+     "correct": 5,
+     "total": 7
+    }
+   },
+   "red_found": {
+    "correct": 1,
+    "total": 2
+   },
+   "red_alerts_right": {
+    "correct": 1,
+    "total": 1
+   }
+  },
+  "last_7_days": {
+   "rate": 0.8571,
+   "correct": 6,
+   "total": 7,
+   "by_horizon": {
+    "J+2": {
+     "rate": 1.0,
+     "correct": 3,
+     "total": 3
+    },
+    "J+3": {
+     "rate": 1.0,
+     "correct": 2,
+     "total": 2
+    },
+    "J+4": {
+     "rate": 0.5,
+     "correct": 1,
+     "total": 2
+    }
+   },
+   "red_found": {
+    "correct": 1,
+    "total": 2
+   },
+   "red_alerts_right": {
+    "correct": 1,
+    "total": 1
+   }
+  }
+ }
+}
