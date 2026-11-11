@@ -1,7 +1,12 @@
 {
   "domain": "tempo_ai",
   "name": "Tempo AI",
-  "codeowners": ["@lgm42"],
+  "categories": [
+    "energy.energy_prices"
+  ],
+  "codeowners": [
+    "@lgm42"
+  ],
   "config_flow": true,
   "documentation": "https://github.com/lgm42/ha-tempo-ai",
   "integration_type": "service",
