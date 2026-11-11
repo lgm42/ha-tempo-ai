@@ -1,0 +1,12 @@
+{
+  "domain": "tempo_ai",
+  "name": "Tempo AI",
+  "codeowners": ["@lgm42"],
+  "config_flow": true,
+  "documentation": "https://github.com/lgm42/ha-tempo-ai",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/lgm42/ha-tempo-ai/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
